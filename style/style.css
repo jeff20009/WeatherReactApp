@@ -1,0 +1,18 @@
+* {
+    border-radius: 0px !important;
+}
+body {
+    margin: .6rem auto;
+}
+
+.w-container {
+    padding: 1.5rem 0;
+}
+.search-btn {
+    cursor: pointer;
+}
+
+td:first-of-type, td:first-of-type > div {
+    height: 150px;
+    width: 200px;
+}
