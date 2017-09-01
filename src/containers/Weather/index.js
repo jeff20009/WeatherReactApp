@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import Chart from '@/components/chart'
 import GoogleMap from '@/components/googlemaps'
 
-class WeatherList extends Component { 
+class WeatherList extends Component {
     renderWeather(cityData) {
         const tempWeather = weather => {
             return weather.main.temp;
@@ -34,7 +34,7 @@ class WeatherList extends Component {
                         <Chart data = { humidity } color = "red" units = "%"/>
                     </td>
                 </tr>
-                
+
             )
         }
     render() {
@@ -44,9 +44,9 @@ class WeatherList extends Component {
                 <thead className="thead-default">
                 <tr>
                     <th width= "25%">City</th>
-                    <th width= "25%">Temperature (K)</th>
-                    <th width= "25%">Pressure (hPa)</th>
-                    <th width= "25%">Humidity (%)</th>
+                    <th width= "25%">Next 5 day Temperature and Average Temp (K) </th>
+                    <th width= "25%">Next 5 day Pressure (hPa)</th>
+                    <th width= "25%">Next 5 day Humidity (%)</th>
                 </tr>
                 </thead>
                 <tbody>
